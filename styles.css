@@ -1,0 +1,340 @@
+body {
+    background-color: #18637069; /* Fondo azul claro */
+    color: #333; /* Texto gris oscuro */
+}
+
+header {
+    background-color: #4682b4; /* Fondo azul steelblue */
+    color: #ffffff; /* Texto blanco */
+    padding: 15px 0;
+}
+
+section {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+h1, h2, h3 {
+    color: #4682b4; /* Texto azul steelblue */
+}
+
+a {
+    color: #4682b4; /* Enlaces azules steelblue */
+}
+
+a:hover {
+    color: #2a4d69; /* Cambio de color al pasar el mouse */
+}
+
+button {
+    background-color: #4682b4; /* Fondo azul steelblue */
+    color: #ffffff; /* Texto blanco */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2a4d69; /* Cambio de color al pasar el mouse */
+}
+
+ul.list-group {
+    background-color: #f0f8ff; /* Fondo azul claro para listas */
+}
+#publicar-mascotas {
+    background-color: #f9f9f9; /* Fondo gris claro */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#publicar-mascotas h1 {
+    color: #4682b4; /* Texto azul steelblue */
+    margin-bottom: 20px;
+}
+
+#publicarMascotasForm {
+    max-width: 600px; /* Ancho máximo del formulario para mejor legibilidad */
+    margin: 0 auto; /* Centra el formulario en la sección */
+}
+
+#publicarMascotasForm label {
+    display: block;
+    margin: 15px 0 5px;
+    color: #333; /* Texto gris oscuro */
+}
+
+#publicarMascotasForm input,
+#publicarMascotasForm textarea,
+#publicarMascotasForm select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px;
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+#publicarMascotasForm select {
+    cursor: pointer; /* Cambia el cursor al pasar sobre la lista desplegable */
+}
+
+#publicarMascotasForm button {
+    width: 100%;
+    background-color: #4682b4; /* Fondo azul steelblue */
+    color: #ffffff; /* Texto blanco */
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+#publicarMascotasForm button:hover {
+    background-color: #2a4d69; /* Cambio de color al pasar el mouse */
+}
+.navbar {
+    background-color: #4682b4; /* Fondo azul steelblue */
+    padding: 15px 0;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-link {
+    color: #ffffff; /* Texto blanco */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s; /* Transición suave del color de texto */
+}
+
+.nav-link:hover {
+    color: #2a4d69; /* Cambio de color al pasar el mouse */
+}
+
+
+
+.navbar {
+    background-color: #4682b4; /* Fondo azul steelblue */
+    padding: 15px 0;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente los elementos del navbar */
+    align-items: center;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-link {
+    color: #ffffff; /* Texto blanco */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s; /* Transición suave del color de texto */
+}
+
+.nav-link:hover {
+    color: #2a4d69; /* Cambio de color al pasar el mouse */
+}
+
+.logo-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+/* Animación para los enlaces del navbar */
+.nav-item {
+    position: relative;
+}
+
+.nav-item::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #2a4d69; /* Color del fondo al pasar el mouse */
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-item:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+       
+#publicar-mascotas {
+    background-color: #f0f8ff; /* Fondo azul claro */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+#publicarMascotasForm {
+    display: grid;
+    gap: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+select {
+    appearance: none;
+    background: url('https://cdn.iconscout.com/icon/free/png-256/drop-down-arrow-2335719-1982874.png') no-repeat right #fff; /* Agrega una flecha personalizada en el select */
+    background-size: 20px;
+    background-position: calc(100% - 10px) center;
+    padding-right: 30px;
+}
+
+input[type="file"] {
+    padding: 10px 0;
+}
+
+button {
+    background-color: #4682b4; /* Fondo azul steelblue */
+    color: #ffffff; /* Texto blanco */
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+button:hover {
+    background-color: #2a4d69; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos para las etiquetas (tags) */
+#etiquetas {
+    display: flex;
+}
+
+#etiquetas input {
+    flex: 1;
+    margin-right: 8px;
+}
+
+#etiquetas button {
+    flex-shrink: 0;
+}
+
+/* Estilos para la imagen de la mascota */
+#imagenMascota {
+    display: none; /* Oculta el input de tipo file por defecto */
+}
+
+#imagenMascotaLabel {
+    background-color: #4682b4; /* Fondo azul steelblue */
+    color: #ffffff; /* Texto blanco */
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+    display: inline-block;
+}
+
+#imagenMascotaLabel:hover {
+    background-color: #2a4d69; /* Cambio de color al pasar el mouse */
+}
+
+#imagenMascotaLabel span {
+    margin-left: 8px;
+}       
+#busqueda-mascotas {
+    text-align: center;
+}
+
+#busquedaMascotasForm {
+    margin-top: 20px;
+}
+
+.resultados {
+    text-align: left;
+}
+
+.resultados ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resultados li {
+    margin-bottom: 10px;
+}
+
+.imagenes-mascotas {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.imagenes-mascotas img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagenes-mascotas img:hover {
+    transform: scale(1.1);
+}
+
+/* Animación para mostrar los resultados */
+#resultadosContainer {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#resultadosContainer.mostrar {
+    opacity: 1;
+}
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.mascota {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.mascota img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Registro - Plataforma de Adopción de Mascotas</title>
+</head>
+<body>
+    <header class="container">
+        <div id="logo" class="text-center py-3">
+            <img src="logo.jpg" alt="Logo de la Plataforma" class="img-fluid logo-img">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="registro.html">Registro</a></li>
+                <li class="nav-item"><a class="nav-link" href="publicacion_mascotas_rescatadas.html">Publicar Mascotas Rescatadas</a></li>
+                <li class="nav-item"><a class="nav-link" href="publicacion_mascotas_perdidas.html">Publicar Mascotas Perdidas</a></li>
+                <li class="nav-item"><a class="nav-link" href="solicitud_donaciones.html">Solicitar Donaciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="busqueda_mascotas.html">Buscar Mascotas</a></li>
+                <li class="nav-item"><a class="nav-link" href="notificaciones.html">Notificaciones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="registro">
+        <h1>Registro de Usuario</h1>
+        <p>Únete a nuestra comunidad para ser parte del cambio. Al registrarte, podrás:</p>
+        <ul>
+            <li>Publicar detalles sobre mascotas rescatadas o perdidas.</li>
+            <li>Participar en causas benéficas y solicitar donaciones para proyectos importantes.</li>
+            <li>Conectar con otros amantes de los animales.</li>
+            <li>Recibir notificaciones personalizadas según tus intereses.</li>
+        </ul>
+
+        <form id="registroForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+
+            <label for="confirmarContrasena">Confirmar Contraseña:</label>
+            <input type="password" id="confirmarContrasena" name="confirmarContrasena" required>
+
+            <button type="submit">Registrarse</button>
+        </form>
+
+        <p>¿Ya tienes una cuenta? <a href="inicio_sesion.html">Inicia sesión</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Plataforma de Adopción de Mascotas</p>
+    </footer>
+
+    <script src="registro.js"></script>
+    <script src="mascotas.js"></script>
+    <script src="notificaciones.js"></script>
+    <script src="notificacionesManager.js"></script>
+</body>
+</html>

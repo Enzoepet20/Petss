@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Publicar Mascotas Perdidas - Plataforma de Adopción de Mascotas</title>
+</head>
+<body>
+    <header class="container">
+        <div id="logo" class="text-center py-3">
+            <img src="logo.jpg" alt="Logo de la Plataforma" class="img-fluid logo-img">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="registro.html">Registro</a></li>
+                <li class="nav-item"><a class="nav-link" href="publicacion_mascotas_rescatadas.html">Publicar Mascotas Rescatadas</a></li>
+                <li class="nav-item"><a class="nav-link" href="publicacion_mascotas_perdidas.html">Publicar Mascotas Perdidas</a></li>
+                <li class="nav-item"><a class="nav-link" href="solicitud_donaciones.html">Solicitar Donaciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="busqueda_mascotas.html">Buscar Mascotas</a></li>
+                <li class="nav-item"><a class="nav-link" href="notificaciones.html">Notificaciones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="publicar-perdidas">
+        <h1>Publicar Mascotas Perdidas</h1>
+        <form id="publicarPerdidasForm">
+            <label for="nombreMascota">Nombre de la Mascota:</label>
+            <input type="text" id="nombreMascota" name="nombreMascota" required>
+
+            <label for="descripcionMascota">Descripción:</label>
+            <textarea id="descripcionMascota" name="descripcionMascota" rows="4" required></textarea>
+
+            <label for="ubicacionPerdida">Ubicación donde se perdió:</label>
+            <input type="text" id="ubicacionPerdida" name="ubicacionPerdida" required>
+
+            <label for="contacto">Información de Contacto:</label>
+            <textarea id="contacto" name="contacto" rows="3" placeholder="Proporciona información para que quienes encuentren la mascota puedan contactarte." required></textarea>
+
+            <label for="fechaPerdida">Fecha de Pérdida:</label>
+            <input type="date" id="fechaPerdida" name="fechaPerdida" required>
+
+            <label for="estadoSaludMascota">Estado de Salud:</label>
+            <select id="estadoSaludMascota" name="estadoSaludMascota" required>
+                <option value="sano">Sano</option>
+                <option value="herido">Herido</option>
+                <option value="enfermo">Enfermo</option>
+            </select>
+
+            <label for="imagenMascotaPerdida">Imagen de la Mascota:</label>
+            <input type="file" id="imagenMascotaPerdida" name="imagenMascotaPerdida" accept="image/*" required>
+
+            <label for="recompensa">Recompensa ofrecida:</label>
+            <input type="text" id="recompensa" name="recompensa" placeholder="Especifica la recompensa ofrecida por encontrar a la mascota">
+
+            <label for="etiquetas">Etiquetas (separadas por comas):</label>
+            <input type="text" id="etiquetas" name="etiquetas" placeholder="Ej. perro, cachorro, collar rojo">
+
+            <button type="submit">Publicar Mascota Perdida</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Plataforma de Adopción de Mascotas</p>
+    </footer>
+
+    <script src="publicacion_mascotas_perdidas.js"></script>
+</body>
+</html>

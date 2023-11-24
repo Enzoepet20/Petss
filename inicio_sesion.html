@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Iniciar Sesión - Plataforma de Adopción de Mascotas</title>
+</head>
+<body>
+    <header class="container">
+        <div id="logo" class="text-center py-3">
+            <img src="logo.jpg" alt="Logo de la Plataforma" class="img-fluid logo-img">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="registro.html">Registro</a></li>
+                <li class="nav-item"><a class="nav-link" href="publicacion_mascotas_rescatadas.html">Publicar Mascotas Rescatadas</a></li>
+                <li class="nav-item"><a class="nav-link" href="publicacion_mascotas_perdidas.html">Publicar Mascotas Perdidas</a></li>
+                <li class="nav-item"><a class="nav-link" href="solicitud_donaciones.html">Solicitar Donaciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="busqueda_mascotas.html">Buscar Mascotas</a></li>
+                <li class="nav-item"><a class="nav-link" href="notificaciones.html">Notificaciones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio-sesion">
+        <h1>Iniciar Sesión</h1>
+        <form id="inicioSesionForm">
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+
+        <p>¿Olvidaste tu contraseña? <a href="recuperar_contrasena.html">Recupérala aquí</a>.</p>
+
+        <div id="redes-sociales">
+            <p>O inicia sesión con:</p>
+            <!-- Agrega aquí botones o enlaces para iniciar sesión con redes sociales -->
+            <a href="#" class="social-button">Facebook</a>
+            <a href="#" class="social-button">Google</a>
+        </div>
+
+        <p>¿Aún no tienes una cuenta? <a href="registro.html">Regístrate aquí</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Plataforma de Adopción de Mascotas</p>
+    </footer>
+
+    <script src="inicio_sesion.js"></script>
+</body>
+</html>

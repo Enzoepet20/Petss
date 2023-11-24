@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Publicar Mascotas Rescatadas - Plataforma de Adopción de Mascotas</title>
+</head>
+<body>
+    <header>
+        <header class="container">
+            <div id="logo" class="text-center py-3">
+                <img src="logo.jpg" alt="Logo de la Plataforma" class="img-fluid logo-img">
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="registro.html">Registro</a></li>
+                    <li class="nav-item"><a class="nav-link" href="publicacion_mascotas_rescatadas.html">Publicar Mascotas Rescatadas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="publicacion_mascotas_perdidas.html">Publicar Mascotas Perdidas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="solicitud_donaciones.html">Solicitar Donaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="busqueda_mascotas.html">Buscar Mascotas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="notificaciones.html">Notificaciones</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <section id="publicar-mascotas">
+        <h1>Publicar Mascotas Rescatadas</h1>
+        <form id="publicarMascotasForm">
+            <label for="nombreMascota">Nombre de la Mascota:</label>
+            <input type="text" id="nombreMascota" name="nombreMascota" required>
+
+            <label for="descripcionMascota">Descripción:</label>
+            <textarea id="descripcionMascota" name="descripcionMascota" rows="4" required></textarea>
+
+            <label for="ubicacionMascota">Ubicación:</label>
+            <input type="text" id="ubicacionMascota" name="ubicacionMascota" required>
+
+            <label for="estadoSaludMascota">Estado de Salud:</label>
+            <select id="estadoSaludMascota" name="estadoSaludMascota" required>
+                <option value="saludable">Saludable</option>
+                <option value="enferma">Enferma</option>
+                <option value="recuperándose">Recuperándose</option>
+            </select>
+
+            <label for="estadoAdopcion">Estado de Adopción:</label>
+            <select id="estadoAdopcion" name="estadoAdopcion" required>
+                <option value="disponible">Disponible</option>
+                <option value="en_proceso">En Proceso</option>
+                <option value="adoptada">Adoptada</option>
+            </select>
+
+            <label for="imagenMascota">Imagen de la Mascota:</label>
+            <input type="file" id="imagenMascota" name="imagenMascota" accept="image/*" required>
+
+            <label for="contacto">Información de Contacto:</label>
+            <textarea id="contacto" name="contacto" rows="3" placeholder="Proporciona información para que los interesados se pongan en contacto contigo." required></textarea>
+
+            <label for="etiquetas">Etiquetas (separadas por comas):</label>
+            <input type="text" id="etiquetas" name="etiquetas" placeholder="Ej. perro, cachorro, amigable">
+
+            <button type="submit">Publicar Mascota</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Plataforma de Adopción de Mascotas</p>
+    </footer>
+
+    <script src="publicacion_mascotas_rescatadas.js"></script>
+</body>
+</html>

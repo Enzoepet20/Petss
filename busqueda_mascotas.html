@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+        <title>Plataforma de Adopción de Mascotas</title>
+    </head>
+<body>
+    <header class="container">
+        <div id="logo" class="text-center py-3">
+            <img src="logo.jpg" alt="Logo de la Plataforma" class="img-fluid logo-img">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="registro.html">Registro</a></li>
+                <li class="nav-item"><a class="nav-link" href="publicacion_mascotas_rescatadas.html">Publicar Mascotas Rescatadas</a></li>
+                <li class="nav-item"><a class="nav-link" href="publicacion_mascotas_perdidas.html">Publicar Mascotas Perdidas</a></li>
+                <li class="nav-item"><a class="nav-link" href="solicitud_donaciones.html">Solicitar Donaciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="busqueda_mascotas.html">Buscar Mascotas</a></li>
+                <li class="nav-item"><a class="nav-link" href="notificaciones.html">Notificaciones</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="busqueda-mascotas">
+        <h1>Buscar Mascotas</h1>
+        <p>Encuentra a tu compañero perfecto. Utiliza el filtro a continuación para buscar mascotas disponibles para adopción.</p>
+
+        <!-- Párrafo descriptivo -->
+        <p>En nuestra plataforma, creemos en la adopción sin prejuicios. No importa la edad, el color o la raza; cada mascota merece un hogar lleno de amor. Selecciona el tipo de mascota que estás buscando y déjanos ayudarte a encontrar a tu nuevo amigo peludo, independientemente de sus características físicas. ¡Descubre la alegría de la adopción imparcial!</p>
+
+      
+        <section id="busqueda-mascotas" class="container">
+            <!-- ... (código existente) ... -->
+            <div id="resultadosContainer" class="galeria">
+                <!-- Ejemplo de tarjeta de mascota (puedes repetir según sea necesario) -->
+                <div class="mascota">
+                    <img src="imagen_perro1.jpg" alt="Perro 1">
+                    <h3>Nombre: Rocky</h3>
+                    <p>Edad: 3 años</p>
+                    <p>Historia: Rocky es un perro juguetón en busca de un hogar amoroso.</p>
+                    <button onclick="adoptar('Rocky')">Adoptar</button>
+                </div>
+                <!-- Repite para más mascotas -->
+    
+                <div class="mascota">
+                    <img src="imagen_gato1.jpg" alt="Gato 1">
+                    <h3>Nombre: Whiskers</h3>
+                    <p>Edad: 2 años</p>
+                    <p>Historia: Whiskers disfruta de la siesta y está listo para ser adoptado.</p>
+                    <button onclick="adoptar('Whiskers')">Adoptar</button>
+                </div>
+            </div>
+            <h2>Resultados de la búsqueda</h2>
+            <div class="galeria">
+                <div class="mascota">
+                    <img src="imagen_perro1.jpg" alt="Perro 1">
+                    <h3>Nombre: Rocky</h3>
+                    <p>Edad: 3 años</p>
+                    <p>Historia: Rocky es un perro juguetón en busca de un hogar amoroso.</p>
+                    <button onclick="adoptar('Rocky')">Adoptar</button>
+                </div>
+
+                <div class="mascota">
+                    <img src="imagen_gato1.jpg" alt="Gato 1">
+                    <h3>Nombre: Whiskers</h3>
+                    <p>Edad: 2 años</p>
+                    <p>Historia: Whiskers disfruta de la siesta y está listo para ser adoptado.</p>
+                    <button onclick="adoptar('Whiskers')">Adoptar</button>
+                </div>
+                <!-- Puedes agregar más mascotas aquí -->
+            </div>
+        </section>
+    <footer class="container text-center py-3">
+        <p>&copy; 2023 Plataforma de Adopción de Mascotas</p>
+    </footer>
+    <script src="busqueda_mascotas.js"></script>
+</body>
+</html>

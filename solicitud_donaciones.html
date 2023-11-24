@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Solicitar Donaciones - Plataforma de Adopción de Mascotas</title>
+</head>
+<body>
+    <header class="container">
+        <div id="logo" class="text-center py-3">
+            <img src="logo.jpg" alt="Logo de la Plataforma" class="img-fluid logo-img">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="registro.html">Registro</a></li>
+                <li class="nav-item"><a class="nav-link" href="publicacion_mascotas_rescatadas.html">Publicar Mascotas Rescatadas</a></li>
+                <li class="nav-item"><a class="nav-link" href="publicacion_mascotas_perdidas.html">Publicar Mascotas Perdidas</a></li>
+                <li class="nav-item"><a class="nav-link" href="solicitud_donaciones.html">Solicitar Donaciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="busqueda_mascotas.html">Buscar Mascotas</a></li>
+                <li class="nav-item"><a class="nav-link" href="notificaciones.html">Notificaciones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="solicitud-donaciones">
+        <h1>Solicitar Donaciones</h1>
+        <p>¡Tu apoyo marca la diferencia! Al solicitar donaciones, estás contribuyendo directamente al bienestar de animales necesitados. Llena el formulario con detalles sobre tu causa y cómo se utilizarán las donaciones.</p>
+
+        <form id="solicitudDonacionesForm">
+            <label for="causa">Causa:</label>
+            <input type="text" id="causa" name="causa" placeholder="Ej. Tratamiento médico para perros rescatados" required>
+
+            <label for="detallesCausa">Detalles de la Causa:</label>
+            <textarea id="detallesCausa" name="detallesCausa" rows="6" placeholder="Proporciona información detallada sobre la causa y cómo se utilizarán las donaciones" required></textarea>
+
+            <div class="grid-2">
+                <div>
+                    <label for="cantidadRequerida">Cantidad Requerida (en USD):</label>
+                    <input type="number" id="cantidadRequerida" name="cantidadRequerida" min="1" required>
+                </div>
+                <div>
+                    <label for="fechaLimite">Fecha Límite para Donar:</label>
+                    <input type="date" id="fechaLimite" name="fechaLimite" required>
+                </div>
+            </div>
+
+            <label for="metodoPago">Método de Pago Preferido:</label>
+            <select id="metodoPago" name="metodoPago" required>
+                <option value="paypal">PayPal</option>
+                <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+                <option value="transferencia">Transferencia Bancaria</option>
+            </select>
+
+            <label for="informacionContacto">Información de Contacto para Donantes:</label>
+            <textarea id="informacionContacto" name="informacionContacto" rows="3" placeholder="Proporciona información para que los donantes puedan contactarte" required></textarea>
+
+            <button type="submit">Solicitar Donaciones</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Plataforma de Adopción de Mascotas</p>
+    </footer>
+
+    <script src="solicitud_donaciones.js"></script>
+</body>
+</html>
